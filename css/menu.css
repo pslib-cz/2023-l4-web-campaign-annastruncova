@@ -3,7 +3,7 @@
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
     font-weight: 700;
-    color: var(--key-color);
+    color: var(--primary);
 }
 .logo-desktop{
     visibility: hidden;
@@ -41,11 +41,8 @@
     font-family: 'Oswald', sans-serif;
 }
 .hamburger-nav li a{
-    color: var(--light);
+    color: var(--primary);
     text-decoration: none;
-}
-.hamburger-nav li:hover {
-    background-color: var(--key-color);
 }
 
 @media screen and (min-width: 640px) {
@@ -91,7 +88,7 @@
         height: 3px;
         bottom: -0.5rem;
         left: 0;
-        background-color: var(--key-color);
+        background-color: var(--primary);
         transform: scaleX(0);
         transition: transform 0.3s ease;
     }
@@ -120,7 +117,7 @@
         position: absolute;
         height: 9px;
         width: 100%;
-        background: var(--key-color);
+        background: var(--primary);
         border-radius: 4.5px;
         left: 0;
         transition: 1s;
