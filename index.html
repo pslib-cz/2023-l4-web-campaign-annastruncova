@@ -40,55 +40,237 @@
                 </nav>
             </div>
     </header>
-    <main class="main">
-        <div class="main__header">
-            <h1>Japonské úly</h1>
-            <p>How to BEEhave Enviromentally Friendly</p>
-        </div>
-        <section class="main__intro">
-            <div class="intro__quote">
-                <blockquote cite="#">
-                    <p>Kdyby na Zemi zmizely včely, zbývají lidem jen čtyři roky života.</p>
-                </blockquote>
+    <section class="main__header">
+        <h1 class="head__text head__text--primary">Japonské úly</h1>
+        <p class="head__text head__text--dark">How to BEEhave Enviromentally Friendly</p>
+    </section> 
+
+    <section class="main__intro">
+
+
+        <section class="citation">
+            <div class="citation__body">
+                <img class="citation__body__exlamation--right citation__body__exlamation" src="./img/icons/icon-quotationmarks.svg" alt="#">
+                <p class="citation__body__text">Kdyby na Zemi zmizely včely, zbývají lidem jen čtyři roky života.</p>
+                <img class="citation__body__exlamation--left citation__body__exlamation" src="./img/icons/icon-quotationmarks.svg" alt="#">
             </div>
-            <div class="intro__slide">
-                <h2>Co to je?</h2>
-                <p>Japonský úl je typ včelího úlu inspirovaný konceptem přírodního včelaření a je navržen tak, aby co nejvíce respektoval přirozené chování včel. V porovnání s tradičními úly nabízí hned několik výhod:</p>
-                <div class="intro__wraper">
-                    <div class="intro__card">
-                        <i></i>
-                        <p>Minnimalizuje zásahy člověka do včelí kolonie, a díky tomu je šetrnější k přírodě. Snižuje se používání chemikálií a umělých látek, čímž se přispívá k ekologické udržitenosti.</p>
+            <p class="text--primary citation__name">- Albert Einstein -</p>
+            <img class="bee" src="./img/img/bee.png" alt="vcela">
+        </section>
+
+
+
+        <section class="whatisit">
+            <h2 class="text--uppercase whatisit__heading">Co to je?</h2>
+            <p class="whatisit__caption">Japonský úl je typ včelího úlu inspirovaný konceptem přírodního včelaření a je
+                navržen tak, aby co nejvíce
+                respektoval přirozené chování včel. V porovnání s tradičními úly nabízí hned několik výhod:</p>
+            <div id="whatisit__cards" class="whatisit__cards">
+                <div class="whatisit__cards__card whatisit__cards__card--dark whatisit__cards__card--active">
+                    <img class="whatisit__cards__card__img" src="./img/icons/icon-leaf.svg" alt="#">
+                    <p class="whatisit__cards__card__caption">
+                        Minnimalizuje zásahy člověka do včelí kolonie, a díky tomu je šetrnější k přírodě. Snižuje se
+                        používání chemikálií a umělých látek, čímž se přispívá k ekologické udržitenosti.
+                    </p>
+                </div>
+                <div class="whatisit__cards__card whatisit__cards__card--primary">
+                    <img class="whatisit__cards__card__img" src="./img/icons/icon-beehive.svg" alt="">
+                    <p class="whatisit__cards__card__caption">
+                        Napodobuje přirozené prostředí pro včelstvo a umožňuje včelám více svobody při stavbě plástů a
+                        řízení svého úlu
+                    </p>
+                </div>
+    
+                <div class="whatisit__cards__card whatisit__cards__card--dark">
+                    <img class="whatisit__cards__card__img" src="./img/icons/icon-bee.svg" alt="">
+                    <p class="whatisit__cards__card__caption">
+                        Japonský úl a podobné iniciativy jsou součástí širšího hnutí, které si klade za cíl porozumět a
+                        řešit problémy, jako je úmrtnost včel.
+                    </p>
+                </div>
+    
+    
+            </div>
+            <img onclick="nextcard()" class="button button--left" src="./img/icons/fi-rr-angle-small-left.svg" alt="">
+            <img onclick="nextcard()" class="button button--right" src="./img/icons/fi-rr-angle-small-right.svg" alt="">
+    
+        </section>
+
+
+    </section>   
+    <img class="honeytop" src="./img/background/top.png" alt="#">
+    <section id="wave1">
+        <div class="container">
+            <div class="image">
+                <img class="build__image" src="./img/img/mobilejaponsky-ul.png" alt="">
+
+            </div>
+            <div class="heading">
+                <h2 class="text--uppercase build__header">
+                    Sestava
+                </h2>
+            </div>
+            <div class="cards">
+                <div class="build__cards" id="build__cards">
+
+                    <div class="build__cards__card build__cards__card--active">
+                        <h3 class="build__cards__card__header">
+                            Kryt:
+                        </h3>
+                        <p class="build__cards__card__caption">
+
+                            Část, která chrání úl a jeho obsah před povětrnostními vlivy.
+                        </p>
                     </div>
-                    <div class="intro__card">
-                        <i></i>
-                        <p>Napodobuje přirozené prostředí pro včelstvo a umožňuje včelám více svobody při stavbě plástů a řízení svého úlu</p>
+                    <div class="build__cards__card">
+                        <h3 class="build__cards__card__header">
+                            Top-Bars:
+                        </h3>
+                        <p class="build__cards__card__caption">
+
+                            Jsou to lišty do kříže, na kterých včely staví své plásty směrem dolů. Tyto lišty jsou
+                            součástí horní části nadstaveb a umožňují včelám přirozeně stavět své úly.
+                        </p>
                     </div>
-                    <div class="intro__card">
-                        <i></i>
-                        <p>Japonský úl a podobné iniciativy jsou součástí širšího hnutí, které si klade za cíl porozumět a řešit problémy, jako je úmrtnost včel. </p>
+                    <div class="build__cards__card">
+                        <h3 class="build__cards__card__header">
+                            Nadstavby:
+                        </h3>
+                        <p class="build__cards__card__caption">
+
+                            Japonský úl má několik nadstaveb, které jsou přidávány na vrchol úlu podle potřeby. Tyto
+                            nadstavby poskytují prostor pro včelí plásty a med.
+                        </p>
                     </div>
+                    <div class="build__cards__card">
+                        <h3 class="build__cards__card__header">
+                            Dno úlu:
+                        </h3>
+                        <p class="build__cards__card__caption">
+
+                            Základní část, na které úl stojí. Možnost otevření spodní části k udržování čistoty úlu.
+                        </p>
+                    </div>
+
+
+
+                </div>
+                <img onclick="nextcard2()" class="button2 button2--left" src="./img/icons/fi-rr-angle-small-left.svg" alt="">
+                <img onclick="nextcard2()" class="button2 button2--right" src="./img/icons/fi-rr-angle-small-right.svg" alt="">
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="wave2">
+        <div class="container">
+            <div class="image1">
+                <img src="./img/img/japonsky-ul.png" alt="">
+            </div>
+            <div class="image2">
+                <img src="./img/img/japonsky-ul2.png" alt="">
+            </div>
+            <div class="heading">
+                <h2 class="text--uppercase">Sestava</h2>
+            </div>
+            <div class="caption1">
+                <div class="build__cards__card build__cards__card--topleft">
+                    <h3 class="build__cards__card__header">
+                        Dno úlu:
+                    </h3>
+                    <p class="build__cards__card__caption">
+
+                        Základní část, na které úl stojí. Možnost otevření spodní části k udržování čistoty úlu.
+                    </p>
                 </div>
             </div>
-        </section>   
-        <section>
-            <h2>Sestava</h2>
-            <div>
-                <p>Kryt: Část, která chrání úl a jeho obsah před povětrnostními vlivy.</p>
-                <p>Top-Bars: Jsou to lišty do kříže, na kterých včely staví své plásty směrem dolů. Tyto lišty jsou součástí horní části nadstaveb a umožňují včelám přirozeně stavět své úly.</p>
-                <p>Nadstavby: Japonský úl má několik nadstaveb, které jsou přidávány na vrchol úlu podle potřeby. Tyto nadstavby poskytují prostor pro včelí plásty a med.</p>
-                <p>Dno úlu: Základní část, na které úl stojí. Možnost otevření spodní části k udržování čistoty úlu.</p>
+            <div class="caption2">
+                <div class="build__cards__card build__cards__card--topright">
+                    <h3 class="build__cards__card__header">
+                        Top-Bars:
+                    </h3>
+                    <p class="build__cards__card__caption">
+
+                        Jsou to lišty do kříže, na kterých včely staví své plásty směrem dolů. Tyto lišty jsou
+                        součástí horní části nadstaveb a umožňují včelám přirozeně stavět své úly.
+                    </p>
+                </div>
             </div>
-        </section>
-        <section>
-            <h2>O nás</h2>
-            <p>Jsme rodinná firma, která se specializuje na výrobu japonských úlů. Jsme vášnivý k naší práci a spolehlivý k našim klientům. Zaměřujeme se na kvalitu výrobků. Angažuje me se v ekologických udržitelných  postupech, tak aby podporovaly harmonii s přírodou a zároveň nabízela vynikající produkty. </p>
-            <img></img>
-        </section>
-        <section>
-            <h2>Najdete nás</h2>
-            <div></div>
-        </section>
-    </main>
-            
+            <div class="caption3">
+                <div class="build__cards__card build__cards__card--downleft">
+                    <h3 class="build__cards__card__header">
+                        Nadstavby:
+                    </h3>
+                    <p class="build__cards__card__caption">
+
+                        Japonský úl má několik nadstaveb, které jsou přidávány na vrchol úlu podle potřeby. Tyto
+                        nadstavby poskytují prostor pro včelí plásty a med.
+                    </p>
+                </div>
+            </div>
+            <div class="caption4">
+                <div class="build__cards__card build__cards__card--downright">
+                    <h3 class="build__cards__card__header">
+                        Dno úlu:
+                    </h3>
+                    <p class="build__cards__card__caption">
+
+                        Základní část, na které úl stojí. Možnost otevření spodní části k udržování čistoty úlu.
+                    </p>
+                </div>
+            </div>
+          </div>
+    </section>
+
+    <img class="honey" src="./img/background/bottom.png" alt="">
+
+
+
+
+
+
+    <section class="about">
+        <h2 class="about__heading">O nás</h2>
+        <p class="about__caption">Jsme rodinná firma, která se specializuje na výrobu japonských úlů. Jsme vášnivý k naší práci a spolehlivý k našim klientům. Zaměřujeme se na kvalitu výrobků. Angažuje me se v ekologických udržitelných  postupech, tak aby podporovaly harmonii s přírodou a zároveň nabízela vynikající produkty. </p>
+        <img class="about__img" src="./img/img/normal-beehive.jpg" alt="Včelí úl">
+    
+    </section>
+    <img class="blackwawe" src="./img/background/dark.background.png" alt="#">
+
+
+    <section class="footer">
+        <h2 class="footer__heading">Najdete nás</h2>
+        <div class="footer__references">
+            <a href="#" class="footer__references__reference"><img src="./img/icons/icon-instagram.svg" alt="instagram"></a>
+            <a href="#" class="footer__references__reference"><img src="./img/icons/icon-facebook.svg" alt="facebook"></a>
+        </div>
+        <p class="footer__adress"><a class="text--primary" href="tel:+420 123 456 789">+420 123 456 789</a></p>
+        <p class="footer__number"><a class="text--primary"href="https://www.google.com/maps/@50.7361444,15.0250431,3a,75y,233.74h,90t/data=!3m6!1e1!3m4!1szRfbySRBZUTtqE-6K9xQ2g!2e0!7i16384!8i8192?entry=ttu">Adresa: Puškinova 285, Liberec, Česká republika</a></p>
+    </section>
 </body>
+<script>
+    function nextcard() {
+
+var indexA = Math.floor(Math.random() * 3);
+var x = document.getElementById("whatisit__cards");
+for (let index = 0; index < x.children.length; index++) {
+    const element = x.children[index];
+    element.classList.remove("whatisit__cards__card--active");
+}
+
+x.children[indexA].classList.add("whatisit__cards__card--active");
+}
+function nextcard2() {
+
+var indexA = Math.floor(Math.random() * 4);
+var x = document.getElementById("build__cards");
+for (let index = 0; index < x.children.length; index++) {
+    const element = x.children[index];
+    element.classList.remove("build__cards__card--active");
+}
+
+x.children[indexA].classList.add("build__cards__card--active");
+}
+</script>
 </html>

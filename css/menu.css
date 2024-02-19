@@ -28,7 +28,7 @@
     scale: 0.8;
 }
 .hamburger-nav {
-    background-color:var(--dark);
+    background-color:var(--light);
 }
 .hamburger-nav ul {
     margin: 0;
