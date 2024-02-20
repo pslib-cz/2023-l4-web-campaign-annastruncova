@@ -31,7 +31,11 @@ main{
 a{
     text-decoration: none;
 }
-
+.shadow{
+    -webkit-box-shadow: 27px 23px 49px -20px rgba(0,0,0,0.34);
+    -moz-box-shadow: 27px 23px 49px -20px rgba(0,0,0,0.34);
+    box-shadow: 27px 23px 49px -20px rgba(0,0,0,0.34);
+}
 
 #wave {
     background-image: url("../img/background/Vector.png");
@@ -185,6 +189,9 @@ h1, h2, h3, h4, .header__text{
 .cards{
     position: relative;
     transform: translateX(-40px);
+    display: flex;
+    align-items: center;
+
 }
 .image {
     grid-area: image;
@@ -224,8 +231,6 @@ h1, h2, h3, h4, .header__text{
     width: 90%;
     padding: 5%;
     display: none;
-    box-shadow: 5px 10px 8px var(--dark1);
-
 }
 .build__cards__card--active{
 display: block;
@@ -263,7 +268,6 @@ display: block;
 .button2{
     width: 40px;
     position: absolute;
-    top: 25%;
 }
 .button2--left{
     left: -15%;
