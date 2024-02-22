@@ -14,7 +14,7 @@ menu{
 }
 html {
     font-family: Enriqueta;
-    font-size: 16px;
+    font-size: 1em;
 }
 body {
     margin: 0;
@@ -58,7 +58,7 @@ a{
 }
 /*header*/
 
-h1, h2, h3, h4, .header__text{
+h1, h2, h3, h4, .head__text{
     font-family: GoboldRegular;
 }
 .head__text--primary {
@@ -67,7 +67,8 @@ h1, h2, h3, h4, .header__text{
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 5%;
-    padding-right: 0.6em;
+    padding: 0.5rem;
+    font-size: 3em;
 }
 
 .head__text--dark {
@@ -76,7 +77,8 @@ h1, h2, h3, h4, .header__text{
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 10;
-    font-size: 30px;
+    padding: 0.5rem;
+    font-size: 2em;
 }
 .main__header {
     background-image: url("../img/img/bee.jpg");
@@ -101,32 +103,29 @@ h1, h2, h3, h4, .header__text{
     margin-bottom: 2em;
 }
 
-.citation__body__mark {
-    font-size: 80px;
-}
+
 
 .citation__body__text {
     padding: 25%;
     padding-top: 12%;
     padding-bottom: 12%;
-    font-size: 20px;
+    font-size: 0.875em;
 }
 .citation__name{
     font-size: large;
-    margin-top: 10%;
+    text-align: center;
 }
-.citation__body__exlamation {}
+.citation__body__exlamation {
+    height: 4rem;
+}
 
 .citation__body__exlamation--right {
-    transform: translateY(-30%) translateX(-10%);
+    transform: translateY(-40%) translateX(-10%);
     float: right;
-}
-.citation__body__exlamation{
-    width: 30%;
 }
 .citation__body__exlamation--left {
     float: left;
-    transform: translateY(-35%) translateX(10%);
+    transform: translateY(-60%) translateX(10%);
 }
 .bee {
     float: right;
@@ -146,19 +145,21 @@ h1, h2, h3, h4, .header__text{
     padding-right: 15%;
     padding-top: 2%;
     padding-bottom: 2%;
-    font-size: 35px;
+    font-size: 2em;
     text-wrap: nowrap;
 }
 .whatisit__caption {
     width: 92%;
-    margin: auto;
+    margin: auto 4rem;
     margin-top: 2%;
+    text-align: center;
 }
 .button--left{
-    left: 0;
+    left: 35px;
+    position: relative;
 }
 .button--right {
-    right: 0;
+    right: 35px;
 }
 .whatisit__cards__card__img {
     margin: auto;
@@ -175,7 +176,7 @@ h1, h2, h3, h4, .header__text{
     width: 60%;
     margin: auto;
     background-color: var(--dark2);
-    border-radius: 20px;
+    border-radius: 2rem;
     display: none;
 
 }
@@ -208,14 +209,10 @@ h1, h2, h3, h4, .header__text{
 }
 
 .build__header {
-    float: right;
     background-color: var(--dark2);
     color: var(--primary);
-    padding-left: 10%;
-    padding-right: 10%;
-    font-size: 40px;
-    margin-right: 8%;
-    margin-top: 25%;
+    padding: 0.3rem;
+    font-size: 2em;
 }
 
 .build__image {
@@ -228,7 +225,7 @@ h1, h2, h3, h4, .header__text{
 
 .build__cards__card {
     background-color: var(--light);
-    width: 90%;
+    width: 40vw;
     padding: 5%;
     display: none;
 }
@@ -250,7 +247,7 @@ display: block;
 }
 
 .button {
-    width: 50px;
+    width: 2.5em;
     position: absolute;
     top: 60%;
 }
@@ -266,14 +263,15 @@ display: block;
         "image cards";
 }
 .button2{
-    width: 40px;
+    width: 2.5em;
     position: absolute;
 }
 .button2--left{
-    left: -15%;
+    left: -2.5rem;
 }
 .button2--right {
-    right: -15%;
+    right: -2rem;
+    position: relative;
 }
 /*background*/
 
@@ -311,11 +309,13 @@ display: block;
 .about__heading {
     color: var(--light);
     text-align: center;
+    margin-top: 20vw;
+    font-size: 2em;
 }
 
 .about__caption {
     color: var(--light);
-    width: 90%;
+    width: 60%;
     margin: auto;
 }
 
@@ -331,38 +331,58 @@ display: block;
 
 
 /*footer*/
+.footer{
+    margin-top: 2rem;
+}
 .footer__references {
     margin: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 1.5em;
     margin-bottom: 5%;
 }
-
+.footer__references__reference{
+    height: 3em;
+}
 .footer__heading {
     color: var(--light);
     background-color: var(--primary);
     width: fit-content;
     margin: auto;
-    font-size: 30px;
+    font-size: 2em;
     padding: 5px;
     margin-bottom: 5%;
 }
 
 .footer__adress {
-    margin-bottom: 5%;
     text-align: center;
 }
 
 .footer__number {
-    margin-bottom: 10%;
     text-align: center;
-
 }
 
-
-
-
-
+/*background honey
+.pattern {
+    position: relative;
+}
+  
+.pattern:before {
+    content: "";
+    position: absolute;
+    bottom: -40%;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background: url(../img/background/Vector.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+*/
+@media only screen and (min-width: 600px) {
+    
+}
 @media only screen and (min-width: 1200px) {
 /*background*/
     #wave2{
