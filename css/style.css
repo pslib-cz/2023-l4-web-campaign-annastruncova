@@ -17,7 +17,7 @@ html {
     font-size: 1em;
 }
 body {
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     background-color: var(--light);
@@ -28,6 +28,7 @@ main{
     max-width: 80%;
     padding-top: 4rem;
 }
+
 a{
     text-decoration: none;
 }
@@ -37,21 +38,6 @@ a{
     box-shadow: 27px 23px 49px -20px rgba(0,0,0,0.34);
 }
 
-#wave {
-    background-image: url("../img/background/Vector.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#wave1 {
-    background-color: var(--primary);
-    width: auto;
-    position: relative;
-    z-index: 48;
-    margin-top: -28%;
-}
-#wave2{
-    display: none;
-}
 .text--primary {
     color: var(--primary);
     
@@ -140,18 +126,15 @@ h1, h2, h3, h4, .head__text{
 .whatisit__heading {
     background-color: var(--primary);
     width: fit-content;
-    margin: auto;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    font-size: 2em;
     text-wrap: nowrap;
+    font-size: 2em;
+    padding: 0.5em; 
+    margin: 0 auto 1em;
+    text-align: center;
 }
 .whatisit__caption {
-    width: 92%;
-    margin: auto 4rem;
-    margin-top: 2%;
+    width: 80%;
+    margin: auto;
     text-align: center;
 }
 .button--left{
@@ -194,9 +177,7 @@ h1, h2, h3, h4, .head__text{
     align-items: center;
 
 }
-.image {
-    grid-area: image;
-}
+
 .whatisit__cards__card--dark{
     background-color: var(--dark2);
 }
@@ -204,41 +185,45 @@ h1, h2, h3, h4, .head__text{
     background-color: var(--primary);
 }
 /*build*/
-.build {
-    background-color: var(--primary);
+.main__build {
+    background-image: url(../img/background/Vector.svg);
+    background-size: cover;
+    background-position: center;
+}
+.build__body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
+.build__cards{
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-right: 0.5rem;
+}
+.build__cards__card{
+    background-color: var(--light);
+    padding: 0.5rem;
+}
+
+.build__img{
+    object-fit: contain;
+}
+.build__img--desktop{
+    display: none;
+}
 .build__header {
     background-color: var(--dark2);
     color: var(--primary);
-    padding: 0.3rem;
+    width: fit-content;
     font-size: 2em;
-}
+    padding: 0.5em; 
+    margin: 0 auto 1em;
+    text-align: center;
+    margin-top: 5rem;
 
-.build__image {
-    margin-top: -20%;
-}
-
-.build__cards {
-    float: right;
-}
-
-.build__cards__card {
-    background-color: var(--light);
-    width: 40vw;
-    padding: 5%;
-    display: none;
-}
-.build__cards__card--active{
-display: block;
-}
-
-.build__cards__card__header {}
-
-.build__cards__card__caption {}
-
-.img--100 {
-    width: 100%;
 }
 
 .text--yellow {
@@ -252,78 +237,34 @@ display: block;
     top: 60%;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 0.7fr 1.3fr;
-    grid-template-rows: 0.5fr 1.5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "image heading"
-        "image cards";
-}
-.button2{
-    width: 2.5em;
-    position: absolute;
-}
-.button2--left{
-    left: -2.5rem;
-}
-.button2--right {
-    right: -2rem;
-    position: relative;
-}
-/*background*/
 
-.honeytop {
-    width: 100%;
-    border: none;
-    z-index: 1;
-    position: relative;
-}
-.honey {
-    width: 100%;
-    border: none;
-    z-index: 44;
-    position: relative;
-    margin-top: -20%;
-}
-.blackwawe{
-    width: 100%;
-   position: relative;
-   z-index: 49;
-   margin-top: -30%;
-}
 /*o nás*/
 .about {
-    background-color: var(--dark2);
-    position: relative;
-    z-index: 40;
-    padding-bottom: 20%;
-    padding-top: 20%;
-    transform: translateY(-15%);
-    margin-bottom: -25%;
-    
+    background-image: url(../img/background/Rectangle\ 12.svg);
+    height: 100%;
+    padding-bottom: 5rem;
+    background-size: cover;
+    background-position: center;
 }
 
 .about__heading {
     color: var(--light);
-    text-align: center;
-    margin-top: 20vw;
     font-size: 2em;
+    padding: 0.5em; 
+    margin: 0 auto 1em;
+    text-align: center;
 }
 
 .about__caption {
     color: var(--light);
-    width: 60%;
+    width: 80%;
     margin: auto;
 }
 
 .about__img {
     display: block;
     width: 80%;
-    margin: auto;
-    margin-top: 10%;
+    margin: 1rem auto;
 }
 
 
@@ -348,10 +289,10 @@ display: block;
     color: var(--light);
     background-color: var(--primary);
     width: fit-content;
-    margin: auto;
     font-size: 2em;
-    padding: 5px;
-    margin-bottom: 5%;
+    padding: 0.5em; 
+    margin: 0 auto 1em;
+    text-align: center;
 }
 
 .footer__adress {
@@ -362,76 +303,73 @@ display: block;
     text-align: center;
 }
 
-/*background honey
-.pattern {
-    position: relative;
-}
-  
-.pattern:before {
-    content: "";
-    position: absolute;
-    bottom: -40%;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-    background: url(../img/background/Vector.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
-}
-*/
-@media only screen and (min-width: 600px) {
-    
+
+@media screen and (min-width: 640px){
+    html{
+        font-size: 120%;
+    }
+    .main__header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;    }
+    .main__header *{
+        width: 15rem;
+        margin: 0 auto;
+    }
+    .about__body{
+        display: flex;
+        flex-direction: row;
+        margin-left: 1em;
+        margin-right: 1em;
+        gap: 1rem;
+    }
+    .about__img{
+        width: 40%;
+    }
+    .bee{
+        width: 30%;
+    }
+    .build__body{
+        align-items: flex-start;
+    }
+    .build__cards{
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 10rem;
+    }
 }
 @media only screen and (min-width: 1200px) {
-/*background*/
-    #wave2{
+    .bee{
+        width: 25%;
+    }
+    .whatisit__cards__card{
         display: block;
-    }
-
-    .header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header__navigation {
-        display: flex;
-        flex-direction: row;
-
-        width: fit-content;
-        height: 100%;
-        align-self: center;
-    }
-
-    .header__icon {
-        display: none;
-    }
-
-    .header__logo {
-        width: 10%;
-    }
-
-    .header__navigation__element {
-        color: black;
-        width: fit-content;
-        height: fit-content;
-        text-wrap: nowrap;
-        margin: 2%;
-        margin-left: 5%;
-        margin-right: 5%;
-        font-weight: bold;
-        font-size: larger;
+        min-height:35vh;
+        width: 16rem;
+        margin-bottom:1.5em;
+        
     }
     .whatisit__cards{
-        margin-top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .whatisit__cards{
+        margin-top: 2em;
     }
     .head {
         background-repeat: no-repeat;
         background-size: cover;
     }
-
+    .about{
+        padding-bottom: 8rem;
+    }
+    .about__body{
+        width: 70%;
+        margin: auto;
+    }
+    .main__header{
+        gap: 10rem;
+    }
     .head__text {
         margin: 0;
         font-size: 50px;
@@ -472,7 +410,10 @@ display: block;
     .citation {
         padding-bottom: 4%;
     }
-
+    .whatisit{
+        width: 80%;
+        margin: 2rem auto;
+    }
     .whatisit__heading {
         padding-top: 1%;
         padding-bottom: 1%;
@@ -482,68 +423,6 @@ display: block;
 
     .whatisit__caption {
         width: 60%;
-    }
-
-   
-
-    .button{
-        display:none;
-    }
-    .button2{
-        display:none;
-    }
-    .whatisit__cards__card{
-     display: block;
-        min-height:35vh;
-        width: 15%;
-        margin: 0;
-        
-    }
-    .whatisit__cards{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .build__cards__card{
-        display: block;
-    }
-
-
-    .container {  display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
-        grid-template-rows: 0.6fr 1.2fr 1.2fr; 
-        gap: 5px 10px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "image1 heading heading image2"
-          "image1 caption1 caption2 image2"
-          "image1 caption3 caption4 image2";
-      }
-      
-      .image1 { grid-area: image1; }
-      
-      .image2 { grid-area: image2; }
-      
-      .heading { grid-area: heading; }
-      
-      .caption1 { grid-area: caption1; }
-      
-      .caption2 { grid-area: caption2; }
-      
-      .caption3 { grid-area: caption3; }
-      
-      .caption4 { grid-area: caption4; }
-      
-
-      #wave1{
-        display: none;
-    }
-      #wave2{
-        background-color: var(--primary);
-        width: auto;
-        position: relative;
-        z-index: 48;
-        margin-top: -28%;
     }
       .about__wrapper{
         display: flex;
@@ -557,18 +436,14 @@ display: block;
         width: 40%;
         margin-top: 0;
     }
-      .blackwawe{
-        z-index: 30;
-        margin-top: -20%;
+    .build__img--desktop{
+        display: block;
     }
-      .about{
-        background-color: var(--dark2);
-        position: relative;
-        z-index: 40;
-        padding-bottom: 5%;
-        padding-top: 0%;
-        transform: translateY(-15%);
-        margin-bottom: -25%;
+    .build__img--mobile{
+        display: none;
+    }
+    .build__cards{
+        margin-bottom: 4rem;
     }
 
 }
